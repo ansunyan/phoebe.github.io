@@ -40,7 +40,8 @@
                </div>
                <div class="d-flex">
                   <div class="dropdown d-lg-inline-block d-none">
-                     <button class="btn btn-outline-secondary" lang="{{ page.lang }}">{{ t.lang_btn_text }}</button>
+                      <button class="btn btn-outline-secondary" id="navEnLang" lang="{{ page.lang }}">{{ t.lang_btn_text }}</button>
+                      <button class="btn btn-outline-secondary" id="navZhLang" lang="{{ page.lang }}">{{ t.lang_btn_text }}</button>
                   </div>
                   <button class="navbar-toggler ms-2" id="mobileNavToggle" type="button" aria-label="{{ t.mobileToggleBtnAriaLabel }}">
                   <span class="navbar-toggler-icon"></span>
@@ -48,22 +49,99 @@
                </div>
             </div>
          </nav>
-        <a href="{{ t.lang_btn_link }}" class="lang-btn">{{ t.lang_btn_text }}</a>
     </header>
-
     <main>
-        <h1>{{ t.title }}</h1>
-        <p>{{ t.desc }}</p>
-        
-        <h2>{{ t.services_heading }}</h2>
-        <ul>
-            <li>{{ t.s1 }}</li>
-            <li>{{ t.s2 }}</li>
-            <li>{{ t.s3 }}</li>
-        </ul>
-
-        <a href="mailto:your-email@example.com" class="cta-button">{{ t.cta }}</a>
-    </main>
-
-</body>
+        <aside>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavTitle">
+               <div class="offcanvas-header border-bottom">
+                  <h2 id="mobileNavTitle" class="h4 offcanvas-title">{{ t.mobileMenuTitle }}</h2>
+                  <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="{{ t.mobileMenuCloseBtn }}" data-bs-target="#mobileNav"></button>
+               </div>
+               <div class="offcanvas-body">
+                  <ul class="nav flex-column border-bottom mb-3 pb-3">
+                     <li class=" nav-item">
+                        <a class="nav-link px-0" href="#services">{{ t.services }}</a>
+                     </li>
+                     <li class=" nav-item">
+                        <a class="nav-link px-0" href="#about">{{ t.about }}</a>
+                     </li>
+                     <li class=" nav-item">
+                        <a class="nav-link px-0" href="#contact">{{ t.contact }}</a>
+                     </li>
+                  </ul>
+                  <p class="mb-0 fw-bold">{{ t.chooseLanguage }}:</p>
+                  <button class="nav-link d-inline-block" lang="en">English</button> | <button class="nav-link d-inline-block" lang="zh-HK">中文</button>
+               </div>
+            </div>
+        </aside>
+        <div class="hero bg-light">
+            <div class="container-fluid py-5">
+               <div class="col-lg-10 col-xl-6 mx-auto">
+                  <div class="text-center">
+                     <h1 class="display-4 mb-4">{{ t.h1 }}</h1>
+                      <p class="h4">{{ t.intro }}</p>
+                      <a href="#services" class="btn btn-lg btn-primary mt-3 mb-5">{{ t.cta }}</a>
+                  </div>
+               </div>
+            </div>
+        </div>
+        <section id="services" class="py-4">
+            <div class="container-xl">
+                <h2 class="mb-4">{{ t.services }}</h2>
+               <div class="row gy-4 gx-5">
+                  <div class="col-12 col-sm-6 col-lg-4">
+                     <div class="card h-100">
+                        <div class="card-body">
+                           <h3 class="card-title">Card title</h3>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                     <div class="card h-100">
+                        <div class="card-body">
+                           <h3 class="card-title">Card title</h3>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                     <div class="card h-100">
+                        <div class="card-body">
+                           <h3 class="card-title">Card title</h3>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="about" class="bg-light py-4">
+            <div class="container-xl">
+               <h2 class="mb-4">{{ t.about }}</h2>
+               <div class="row">
+                  <div class="col-6">
+                     <h3>Test</h3>
+                  </div>
+                  <div class="col-6">
+                     <p>Phoebe Tse</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="py-4">
+             <div class="container-xl">
+                 <h2 class="mb-4">{{ t.contact }}</h2>
+                 <div class="row">
+                     <div class="col-4">
+                     </div>
+                 </div>
+             </div>
+         </section>
+      </main>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/i18next@26.3.1/dist/umd/i18next.min.js" crossorigin="anonymous"></script>
+      <script src="js/custom.js"></script>
+      <script src="https://kit.fontawesome.com/d10e784283.js" crossorigin="anonymous"></script>
+   </body>
 </html>
