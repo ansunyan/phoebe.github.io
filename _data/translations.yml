@@ -1,4 +1,4 @@
-siteUrl: "https://phoebe-ot.github.io/"
+siteUrl: &siteURL "https://phoebe-ot.github.io/"
 email: "feebitse@gmail.com"
 
 en:
@@ -19,6 +19,8 @@ en:
   mobileMenuTitle: "Menu"
   mobileToggleBtnAriaLabel: "Toggle navigation"
   services: "Services"
+  siteLocalizedUrl: *siteUrl
+  socialMediaDesc: ""
 
 zh-HK:
   title: "雙語商業顧問與諮詢服務"
@@ -29,3 +31,5 @@ zh-HK:
   lang_btn_text: "English"
   lang_btn_lang: "en"
   lang_btn_link: "/"
+  siteLocalizedUrl: "https://phoebe-ot.github.com/zh"
+  socialMediaDesc: ""
