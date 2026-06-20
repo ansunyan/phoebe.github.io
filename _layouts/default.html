@@ -92,20 +92,19 @@
                </div>
             </div>
         </aside>
-        <div class="hero bg-light">
-            <div class="container-fluid py-5">
-               <div class="col-lg-10 col-xl-6 mx-auto">
-                  <div class="text-center">
-                     <h1 class="display-4 mb-4">{{ lang.h1 }}</h1>
-                      <p class="h4">{{ lang.intro }}</p>
-                      <div class="row my-5 g-2">
-                          <div class="col-8 offset-2 offset-md-3 offset-lg-0 col-md-6">
-                              <a href="{{ lang.primaryCtaHref }}" class="btn btn-lg btn-primary w-100">{{ lang.primaryCta }}</a>
-                          </div>
-                          <div class="col-8 offset-2 offset-md-3 offset-lg-0 col-md-6">
-                              <a href="{{ lang.theOtherLangHomeUrl }}" class="btn btn-lg btn-outline-primary w-100" lang="{{ lang.theOtherLang }}">{{ lang.secondaryCta }}</a>
-                          </div>
-                      </div>
+        <div id="hero" class="card text-bg-dark border-0 rounded-0 overflow-hidden position-relative">
+            <img src="https://ichef.bbci.co.uk/images/ic/1024x576/p0nsptjd.jpg.webp" alt="{{ lang.heroImgAltText }}" class="card-img rounded-0 object-fit-cover position-absolute top-0 start-0 w-100 h-100">
+            <div class="card-img-overlay d-flex align-items-center justify-content-center text-center bg-dark bg-opacity-50 rounded-0 position-relative py-5">
+               <div class="p-3 my-5 col-lg-10 col-xl-6 mx-auto">
+                   <h1 class="display-4 mb-4">{{ lang.h1 }}</h1>
+                   <p class="h4">{{ lang.intro }}</p>
+                   <div class="row my-5 g-2">
+                       <div class="col-8 offset-2 offset-md-3 offset-lg-0 col-md-6">
+                           <a href="{{ lang.primaryCtaHref }}" class="btn btn-lg btn-primary w-100">{{ lang.primaryCta }}</a>
+                       </div>
+                       <div class="col-8 offset-2 offset-md-3 offset-lg-0 col-md-6">
+                           <a href="{{ lang.theOtherLangHomeUrl }}" class="btn btn-lg btn-outline-primary w-100" lang="{{ lang.theOtherLang }}">{{ lang.secondaryCta }}</a>
+                       </div>
                   </div>
                </div>
             </div>
