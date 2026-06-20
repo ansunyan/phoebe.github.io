@@ -1,4 +1,4 @@
-siteUrl: &siteURL "https://phoebe-ot.github.com/"
+siteUrl: &siteURL "https://phoebe-ot.github.io/"
 email: "feebitse@gmail.com"
 
 en:
@@ -26,7 +26,7 @@ en:
   socialMediaDesc: ""
   socialMediaImgUrl: ""
   theOtherLang: "zh-HK"
-  theOtherLangHomeUrl: &zhHomeUrl "https://phoebe-ot.github.com/zh/"
+  theOtherLangHomeUrl: &zhHomeUrl "https://phoebe-ot.github.io/zh/"
 
 zh-HK:
   title: "雙語商業顧問與諮詢服務"
