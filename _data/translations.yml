@@ -22,6 +22,8 @@ en:
   secondaryCta: ""
   secondaryCtaHref: *zhLink
   services: "Services"
+  serviceChineseSupportDesc: "Over 16,000 people in Edmonton speak Cantonese or Mandarin Chinese, including me. I understand that language is more than just the words spoken. It's also the culture."
+  serviceChineseSupportTitle: "Full Cantonese and Mandarin Chinese support"
   siteLocalizedUrl: *siteUrl
   socialMediaDesc: ""
 
