@@ -16,6 +16,9 @@ en:
   metaDesc: ""
   mobileMenuTitle: "Menu"
   mobileToggleBtnAriaLabel: "Toggle navigation"
+  offcanvasAboutDesc: &placeholder "Brief description for SEO"
+  offcanvasContactDesc: *placeholder
+  offcanvasServicesDesc: *placeholder
   primaryCta: "Continue in English"
   primaryCtaHref: &firstSectionLink "#services"
   secondaryCta: "轉用中文"
@@ -43,6 +46,9 @@ zh-HK:
   metaDesc: ""
   mobileMenuTitle: ""
   mobileToggleBtnAriaLabel: ""
+  offcanvasAboutDesc: ""
+  offcanvasContactDesc: ""
+  offcanvasServicesDesc: ""
   primaryCta: "預約顧問諮詢"
   primaryCtaHref: *firstSectionLink
   secondaryCta: "Switch to English"
