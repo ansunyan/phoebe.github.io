@@ -1,3 +1,8 @@
+:root {
+  --bs-body-font-family: 'Cormorant', serif;
+  --bs-body-font-weight: 500;
+  --bs-body-font-size: 1.25rem;
+}
 html {
     scroll-behavior: smooth;
 }
